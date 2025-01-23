@@ -554,8 +554,44 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-\[0\] {
+  right: 0;
+}
+
+.right-\[50px\] {
+  right: 50px;
+}
+
+.right-\[80px\] {
+  right: 80px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[35px\] {
+  margin-top: 35px;
 }
 
 .flex {
@@ -566,8 +602,20 @@ video {
   display: none;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -582,32 +630,72 @@ video {
   gap: 12px;
 }
 
-.gap-\[200px\] {
-  gap: 200px;
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .gap-\[60px\] {
   gap: 60px;
 }
 
-.p-\[20px_0px\] {
-  padding: 20px 0px;
+.gap-\[80px\] {
+  gap: 80px;
 }
 
-.p-\[20px_10px\] {
-  padding: 20px 10px;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
-.p-\[_10px\] {
-  padding: 10px;
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
-.p-\[1px\] {
-  padding: 1px;
+.bg-\[\#094B72\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 75 114 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#E7F6FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 246 255 / var(--tw-bg-opacity, 1));
 }
 
 .p-\[14px\] {
   padding: 14px;
+}
+
+.p-\[3px_20px\] {
+  padding: 3px 20px;
+}
+
+.p-\[6px_12px\] {
+  padding: 6px 12px;
+}
+
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-\[14px\] {
@@ -618,8 +706,30 @@ video {
   font-size: 18px;
 }
 
+.text-\[34px\] {
+  font-size: 34px;
+}
+
+.font-\[700\] {
+  font-weight: 700;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.tracking-\[2px\] {
+  letter-spacing: 2px;
+}
+
+.text-\[\#094B72\] {
+  --tw-text-opacity: 1;
+  color: rgb(9 75 114 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#193E6C\] {
+  --tw-text-opacity: 1;
+  color: rgb(25 62 108 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#2D2F30\] {
@@ -627,7 +737,26 @@ video {
   color: rgb(45 47 48 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#4F4F4F\] {
+  --tw-text-opacity: 1;
+  color: rgb(79 79 79 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#848484\] {
+  --tw-text-opacity: 1;
+  color: rgb(132 132 132 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 @media (min-width: 768px) {
+  .md\:mt-\[50px\] {
+    margin-top: 50px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -640,6 +769,22 @@ video {
     display: none;
   }
 
+  .md\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -648,21 +793,71 @@ video {
     justify-content: space-between;
   }
 
-  .md\:gap-\[200px\] {
-    gap: 200px;
-  }
-
-  .md\:gap-\[100px\] {
-    gap: 100px;
+  .md\:gap-\[30px\] {
+    gap: 30px;
   }
 
   .md\:gap-\[50px\] {
     gap: 50px;
   }
+
+  .md\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .md\:text-start {
+    text-align: start;
+  }
+
+  .md\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .md\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[45px\] {
+    font-size: 45px;
+  }
+
+  .md\:leading-\[85px\] {
+    line-height: 85px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .lg\:mt-\[120px\] {
+    margin-top: 120px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:gap-\[200px\] {
     gap: 200px;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .lg\:text-\[70px\] {
+    font-size: 70px;
   }
 }
